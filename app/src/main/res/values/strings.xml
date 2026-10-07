@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">PMDM_P1_JavierGallego</string>
+    <string name="app_name">Marvel Tracker</string>
+
+    <string name="tv_titulo_catalogo">Catálogo de Marvel</string>
+
+    <string name="tv_bienvenida_usuario">Bienvenido, %1$s</string>
+
+    <string name="btn_detalles">Ver ficha técnica</string>
+    <string name="btn_marcar_visto">Marcar como visto</string>
+
+    <string name="tv_estado_pendiente">Pendiente de ver</string>
+    <string name="tv_estado_completado">Completada</string>
+
+    <string-array name="array_fases_marvel">
+        <item>Fase 1</item>
+        <item>Fase 2</item>
+        <item>Fase 3</item>
+        <item>Fase 4</item>
+        <item>Fase 5</item>
+        <item>Fase 6</item>
+    </string-array>
 </resources>
