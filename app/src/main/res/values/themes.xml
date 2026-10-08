@@ -1,9 +1,32 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.PMDM_P1_JavierGallego" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.MarvelTracker" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/color_primario</item>
+        <item name="colorPrimaryVariant">@color/color_primario_variante</item>
+        <item name="colorSecondary">@color/color_secundario</item>
+        <item name="android:windowBackground">@color/color_fondo</item>
+
     </style>
 
-    <style name="Theme.PMDM_P1_JavierGallego" parent="Base.Theme.PMDM_P1_JavierGallego" />
+    <style name="Theme.MarvelTracker" parent="Base.Theme.MarvelTracker" />
+
+    <style name="EstiloTituloMarvel">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_texto_principal</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="EstiloBoton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_texto_principal</item>
+        <item name="android:backgroundTint">@color/color_primario</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+
+    </style>
 </resources>
