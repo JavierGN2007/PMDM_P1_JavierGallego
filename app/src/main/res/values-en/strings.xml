@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Marvel Tracker</string>
+
+    <string name="tv_titulo_catalogo">Marvel Catalog</string>
+
+        <string name="tv_bienvenida_usuario">Welcome, %1$s</string>
+
+    <string name="btn_detalles">View details</string>
+    <string name="btn_marcar_visto">Mark as watched</string>
+
+    <string name="tv_estado_pendiente">Pending</string>
+    <string name="tv_estado_completado">Completed</string>
+
+    <string-array name="array_fases_marvel">
+        <item>Phase 1</item>
+        <item>Phase 2</item>
+        <item>Phase 3</item>
+        <item>Phase 4</item>
+        <item>Phase 5</item>
+        <item>Phase 6</item>
+    </string-array>
+
+
+</resources>
