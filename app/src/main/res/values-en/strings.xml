@@ -21,5 +21,14 @@
         <item>Phase 6</item>
     </string-array>
 
+    <string name="titulo_avengers">The Avengers</string>
+    <string name="titulo_ultron">Avengers: Age of Ultron</string>
+    <string name="titulo_infinity">Avengers: Infinity War</string>
+    <string name="titulo_endgame">Avengers: Endgame</string>
 
+    <string name="info_avengers">2012 • 2h 23m • Action / Sci-Fi</string>
+
+    <string name="titulo_sinopsis">Synopsis</string>
+    <string name="sinopsis_avengers">When an unexpected enemy emerges that threatens global safety and security, Nick Fury, Director of the agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster: Iron Man, Captain America, Hulk, Thor, Black Widow, and Hawkeye.</string>
+    <string name="btn_volver">Back to catalog</string>
 </resources>

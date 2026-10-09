@@ -5,15 +5,160 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/color_fondo">
 
-    <TextView
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glCentroVertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_marvel"
+        android:contentDescription="@string/tv_titulo_catalogo"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        style="@style/EstiloTituloMarvel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tv_titulo_catalogo"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ivPosterAvengers"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/titulo_avengers"
+        android:scaleType="fitCenter"
+        android:src="@drawable/avengers"
+        app:layout_constraintEnd_toStartOf="@id/glCentroVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+    <ImageView
+        android:id="@+id/ivPosterUltron"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ultron"
+        android:contentDescription="@string/titulo_ultron"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toEndOf="@id/glCentroVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvTituloAvengers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/titulo_avengers"
+        android:textColor="@color/color_texto_principal"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ivPosterAvengers"
+        app:layout_constraintStart_toStartOf="@id/ivPosterAvengers"
+        app:layout_constraintEnd_toEndOf="@id/ivPosterAvengers"
+        />
+
+    <TextView
+        android:id="@+id/tvTituloUltron"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/titulo_ultron"
+        android:textColor="@color/color_texto_principal"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ivPosterUltron"
+        app:layout_constraintStart_toStartOf="@id/ivPosterUltron"
+        app:layout_constraintEnd_toEndOf="@id/ivPosterUltron"
+        />
+
+    <ImageView
+        android:id="@+id/ivPosterInfinity"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/titulo_infinity"
+        android:scaleType="fitCenter"
+        android:src="@drawable/infinity"
+        app:layout_constraintEnd_toStartOf="@id/glCentroVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloAvengers" />
+
+    <ImageView
+        android:id="@+id/ivPosterEndgame"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/endgame"
+        android:contentDescription="@string/titulo_endgame"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloUltron"
+        app:layout_constraintStart_toEndOf="@id/glCentroVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvTituloInfinity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/titulo_infinity"
+        android:textColor="@color/color_texto_principal"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ivPosterInfinity"
+        app:layout_constraintStart_toStartOf="@id/ivPosterInfinity"
+        app:layout_constraintEnd_toEndOf="@id/ivPosterInfinity"
+        />
+
+    <TextView
+        android:id="@+id/tvTituloEndgame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/titulo_endgame"
+        android:textColor="@color/color_texto_principal"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ivPosterEndgame"
+        app:layout_constraintStart_toStartOf="@id/ivPosterEndgame"
+        app:layout_constraintEnd_toEndOf="@id/ivPosterEndgame"
+        />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
