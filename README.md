@@ -19,7 +19,7 @@ La aplicación se centra en el diseño de interfaces modernas y adaptables sigui
 
 | Vista Principal (Catálogo) | Vista de Detalle (Avengers) |
 | :---: | :---: |
-| ![Catálogo](docs/Captura de pantalla 2026-10-09 175456.png) | ![Detalle](docs/Captura de pantalla 2026-10-09 180320.png) |
+| ![Catálogo](docs/catalogo.png) | ![Detalle](docs/detalle.png) |
 
 ---
 
